@@ -26,6 +26,9 @@ public class TodoApplication {
 		return () -> {
 			todoRepository.save(new Todo("John", "the life of Rambo", true, new TodoCategory("Recettes"), new Date()));
 			todoRepository.save(new Todo("Billy", "the Kid", true, new TodoCategory("Western"), new Date()));
+			todoRepository.save(new Todo("C'era una volta", "Il West", true, new TodoCategory("Western"), new Date()));
+			todoRepository.save(new Todo("Star", "Wars", true, new TodoCategory("SciFi"), new Date()));
+
 		};
 	}
 }
